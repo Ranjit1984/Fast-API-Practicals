@@ -19,7 +19,7 @@ def user_not_found_handler(request:Request, exc:UserNotFountException):
 
 @app.get("/user/{name}")
 def get_user(name:str):
-    if name != "mohit":
+    if name != "Ranjit":
         raise UserNotFountException(name)
     return{
         "name":name
@@ -34,5 +34,5 @@ def get_user(name:str):
 #         )
 #     return{
 #         "id":1,
-#         "name":"Mohit"
+#         "name":"Ranjit"
 #     }
